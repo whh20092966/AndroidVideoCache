@@ -25,7 +25,7 @@ public class DiskUsageTest extends BaseTest {
     @Before
     public void setup() throws Exception {
         cacheFolder = ProxyCacheTestUtils.newCacheFile();
-        createDirectory(cacheFolder);
+        cacheFolder.mkdir();
         cleanDirectory(cacheFolder);
     }
 

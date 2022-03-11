@@ -1,15 +1,16 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion '25.0.2'
+
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId 'com.danikula.videocache.sample'
+        applicationId "com.danikula.videocache.sample"
         minSdkVersion 21
-        targetSdkVersion 23
+        targetSdkVersion 30
         versionCode 1
-        versionName '1.0'
+        versionName "1.0"
     }
 }
 

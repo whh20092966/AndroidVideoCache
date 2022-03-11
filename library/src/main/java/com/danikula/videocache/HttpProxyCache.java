@@ -1,6 +1,7 @@
 package com.danikula.videocache;
 
 import android.text.TextUtils;
+import android.util.Log;
 
 import com.danikula.videocache.file.FileCache;
 
@@ -43,6 +44,7 @@ class HttpProxyCache extends ProxyCache {
         long offset = request.rangeOffset;
         if (isUseCache(request)) {
             responseWithCache(out, offset);
+            Log.d(HttpProxyCache.class.getSimpleName(), "userCache");
         } else {
             responseWithoutCache(out, offset);
         }

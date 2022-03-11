@@ -1,18 +1,14 @@
 package com.danikula.videocache.file;
 
-import com.danikula.android.garden.io.Files;
 import com.danikula.videocache.BaseTest;
 import com.danikula.videocache.Cache;
 import com.danikula.videocache.ProxyCacheException;
-
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;
-
 import java.io.File;
 import java.io.IOException;
 import java.util.Arrays;
-
 import static com.danikula.videocache.support.ProxyCacheTestUtils.ASSETS_DATA_NAME;
 import static com.danikula.videocache.support.ProxyCacheTestUtils.generate;
 import static com.danikula.videocache.support.ProxyCacheTestUtils.getFileContent;
@@ -138,7 +134,7 @@ public class FileCacheTest extends BaseTest {
     public void testFileErrorForDiscCache() throws Exception {
         File file = new File("/system/data.bin");
         FileCache fileCache = new FileCache(file);
-        Files.delete(file);
+        file.delete();
         fileCache.available();
         Assert.fail();
     }
