@@ -2,7 +2,6 @@ package com.danikula.videocache.sample;
 
 import android.app.Application;
 import android.content.Context;
-
 import com.danikula.videocache.HttpProxyCacheServer;
 
 /**
